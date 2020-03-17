@@ -24,7 +24,7 @@ const StartScreen = props => {
             <Card>
                 <TextInput
                     placeholder='number between 1 and 99, please'
-                    maxLength='2'
+                    maxLength={2}
                     keyboardType='number-pad'
                     value={val}
                     onChangeText={ nr => setVal(nr) }

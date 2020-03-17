@@ -7,15 +7,32 @@ import EndScreen from './screens/EndScreen'
 const App = () => {
   const [userNumber, setUserNumber] = useState()
   const [gameOver, setGameOver] = useState(false)
+  const [numberOfGuesses, setNumberOfGuesses] = useState(1) 
+
+  const restart = () => {
+    setUserNumber()
+    setGameOver(false)
+    setNumberOfGuesses(0)
+  }
 
   let currentScreen = <StartScreen setUserNumber={setUserNumber} />
 
   if(!isNaN(userNumber)){
-    currentScreen = <GameScreen />
+    currentScreen = 
+    <GameScreen 
+      numberOfGuesses={numberOfGuesses}
+      setNumberOfGuesses={setNumberOfGuesses} 
+      userNumber={userNumber} 
+      setGameOver={setGameOver} 
+      />
   }
   
   if(gameOver){
-    currentScreen = <EndScreen />
+    currentScreen = 
+    <EndScreen 
+      numberOfGuesses={numberOfGuesses}
+      userNumber={userNumber} 
+      restart={restart} />
   }
 
   return(

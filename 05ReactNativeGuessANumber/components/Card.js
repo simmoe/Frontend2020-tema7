@@ -14,7 +14,7 @@ const css = StyleSheet.create({
         marginVertical:24,
         justifyContent:'center',
         alignItems:'center',
-        width:300,
+        width:'80%',
         shadowColor:'black',
         shadowOffset:{ width:0, height:2 },
         shadowRadius: 6,
