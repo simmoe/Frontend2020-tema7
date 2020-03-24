@@ -5,7 +5,7 @@
     import { showModal } from 'svelte-native'
     import Article from './modals/Article.svelte'
 
-    let countryNumber = 0
+    let countryNumber = 0 
     let country = 'us'
     $: {
         country = countryNumber == 0 ? 'us' : 'no'
