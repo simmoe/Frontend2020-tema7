@@ -30,7 +30,7 @@ const getProducts = () => {
         .then( json => FirestoreParser(json) )
             .then( parsed => {
                 items = parsed.documents
-                console.log(items)
+                //console.log(items)
             })
     .catch( error => console.log(error) )
 }
@@ -41,13 +41,14 @@ getProducts()
 
 <style>
     .main{
-        background-color:#aaa;
+        background-color:#000;
     }
     .product{
-        margin: 8 8 0 8;
+        margin: 24 24 0 24;
         background-color:lightgray;
         border-radius:8;
         padding:16;
+        box-shadow: 2 2 white;
     }
     .product > image{
         height:80;
