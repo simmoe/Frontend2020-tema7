@@ -17,6 +17,6 @@ const getData = (url) => {
     })
 } 
 ``` 
-The function takes a Url as a parameter, tries to fetch the data - and in case that works out, returns thea resolved promise. If not, it logs an error to console. 
+The function takes a Url as a parameter, tries to fetch the data - and in case that works out, returns the resolved promise. If not, it logs an error to the console. 
 
-Don't forget to insert an api key to new york times api and moviedb api
+Don't forget to insert personal api keys to new york times api and moviedb api
