@@ -1,5 +1,5 @@
 # Multiple API's
-Sqy we wanted to fetch data from several api's and display results as tabs in our app. This is an example of a svelte native app with three differrent fetches in App.svelte, implemented as a promise function: 
+Say we wanted to fetch data from several api's and display results as tabs in our app. This is an example of a svelte native app with three differrent fetches in App.svelte, implemented as a promise function: 
 ```html
 const getData = (url) => {
     console.log('THIS IS A JS PROMISE ')
