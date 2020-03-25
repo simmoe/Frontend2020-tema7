@@ -41,10 +41,11 @@
 <script>
     import { onMount } from 'svelte'
     import { Template } from 'svelte-native/components'
-    const my_api_key = 'g6R76FJJwgaLM8lQCROIJBHQY8BH3Brx' 
+    const nyt_api_key = 'YOUR_NEW_YORK_TIMES_API_KEY' 
+    const moviedb_api_key = 'YOUR_MOVIEDB_API_KEY' 
     const api_url = `https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=${my_api_key}`
-    const pop_movie_api_url = 'https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=cffa047e4f2e83b565d15715e66d2a35'
-    const rate_movie_api_url = 'https://api.themoviedb.org/3/discover/movie?sort_by=vote_average.desc&api_key=cffa047e4f2e83b565d15715e66d2a35'
+    const pop_movie_api_url = `https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=${moviedb_api_key}`
+    const rate_movie_api_url = `https://api.themoviedb.org/3/discover/movie?sort_by=vote_average.desc&api_key=${moviedb_api_key}`
 
 
     let books = ['hejh', 'per']
