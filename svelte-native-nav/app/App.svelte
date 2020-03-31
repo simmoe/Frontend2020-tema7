@@ -1,7 +1,7 @@
 <page actionBarHidden={true}>
    <tabs bind:selectedIndex={selectedTab} tabsPosition='bottom'>
-	<tabStrip>
-		<tabStripItem class='blue'>
+	<tabStrip  class='blue'>
+		<tabStripItem>
 			<label text="Page 1" />
 		</tabStripItem>
 		<tabStripItem>
@@ -52,14 +52,13 @@ registerNativeViewElement("cardView", () =>
 <style>
     .blue{
         padding:24;
-        animation: leftIn 1s ease;
+        animation-name: leftIn;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
     }
     @keyframes leftIn{
-        from{
-            transform:translate(-100,0);
-        }
-        to{
-            transform:translate(0,0);
-        }
+        from { transform: translate(-100, 0); }
+        to { transform: translate(0, 0); }
     }
 </style>
